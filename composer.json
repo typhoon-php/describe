@@ -26,7 +26,9 @@
             "Typhoon\\Describer\\": "src/"
         },
         "files": [
-            "src/describeReflection.php"
+            "src/describeReflectedDeclaration.php",
+            "src/describeValueType.php",
+            "src/describeReflectedType.php"
         ]
     },
     "autoload-dev": {
