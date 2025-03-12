@@ -1,6 +1,6 @@
 {
-    "name": "typhoon/template",
-    "description": "Typhoon Template",
+    "name": "typhoon/describer",
+    "description": "Typhoon Describer",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -23,12 +23,15 @@
     },
     "autoload": {
         "psr-4": {
-            "Typhoon\\Template\\": "src/"
-        }
+            "Typhoon\\Describer\\": "src/"
+        },
+        "files": [
+            "src/describeReflection.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
-            "Typhoon\\Template\\": "tests/"
+            "Typhoon\\Describer\\": "tests/"
         }
     },
     "config": {
