@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Typhoon\Describer;
+namespace Typhoon\Describe;
 
 use PHPUnit\Framework\Attributes\CoversFunction;
 use PHPUnit\Framework\Attributes\TestWith;
 use PHPUnit\Framework\TestCase;
-use Typhoon\Describer\Fixture\SomeEnum;
+use Typhoon\Describe\Fixture\SomeEnum;
 
-#[CoversFunction('Typhoon\Describer\describeValueType')]
+#[CoversFunction('Typhoon\Describe\describeValueType')]
 final class DescribeValueTypeTest extends TestCase
 {
     #[TestWith([null, 'null'])]
@@ -25,7 +25,7 @@ final class DescribeValueTypeTest extends TestCase
     #[TestWith([[1, 2, 3], 'list{1, 2, 3}'])]
     #[TestWith([['a' => 'b'], "array{'a': 'b'}"])]
     #[TestWith([['a' => 'b', 'c'], "array{'a': 'b', 0: 'c'}"])]
-    #[TestWith([SomeEnum::A, 'Typhoon\Describer\Fixture\SomeEnum::A'])]
+    #[TestWith([SomeEnum::A, 'Typhoon\Describe\Fixture\SomeEnum::A'])]
     #[TestWith([new \stdClass(), 'stdClass'])]
     #[TestWith([STDIN, 'resource'])]
     public function test(mixed $value, string $expected): void

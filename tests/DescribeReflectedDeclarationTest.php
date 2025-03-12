@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Typhoon\Describer;
+namespace Typhoon\Describe;
 
 use PHPUnit\Framework\Attributes\CoversFunction;
 use PHPUnit\Framework\TestCase;
 
-#[CoversFunction('Typhoon\Describer\describeReflectedDeclaration')]
+#[CoversFunction('Typhoon\Describe\describeReflectedDeclaration')]
 final class DescribeReflectedDeclarationTest extends TestCase
 {
     public function testItDescribesReflectionFunctionFromName(): void
@@ -102,7 +102,7 @@ final class DescribeReflectedDeclarationTest extends TestCase
 
         $description = describeReflectedDeclaration($reflection);
 
-        self::assertSame('class `Typhoon\Describer\DescribeReflectedDeclarationTest`', $description);
+        self::assertSame('class `Typhoon\Describe\DescribeReflectedDeclarationTest`', $description);
     }
 
     public function testItDescribesAnonymousClass(): void

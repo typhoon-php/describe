@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Typhoon\Describer\Fixture;
+namespace Typhoon\Describe\Fixture;
 
 enum SomeEnum
 {

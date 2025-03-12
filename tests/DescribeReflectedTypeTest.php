@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Typhoon\Describer;
+namespace Typhoon\Describe;
 
 use PHPUnit\Framework\Attributes\CoversFunction;
 use PHPUnit\Framework\Attributes\TestWith;
 use PHPUnit\Framework\TestCase;
 
-#[CoversFunction('Typhoon\Describer\describeReflectedType')]
+#[CoversFunction('Typhoon\Describe\describeReflectedType')]
 final class DescribeReflectedTypeTest extends TestCase
 {
     /**
